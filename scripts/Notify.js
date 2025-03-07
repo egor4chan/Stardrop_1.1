@@ -5,7 +5,7 @@ function send_notify(message) {
     notify.innerHTML = message;
 
     setTimeout(() => {
-        notify.style.top = '20px'
+        notify.style.top = '100px'
     }, 10);
 
     setTimeout(() => {

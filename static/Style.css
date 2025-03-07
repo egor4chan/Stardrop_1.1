@@ -152,7 +152,7 @@ button.goto {
 @keyframes rotate {
     from {
         rotate: 0deg;
-        top: -200px
+        top: -300px
     }
     90% {
         opacity: 1;
@@ -793,4 +793,9 @@ h3#invited {
     z-index: 1000;
     color: white;
     font-weight: 500;
+}
+
+body {
+    position: relative;
+    top: 80px;
 }
