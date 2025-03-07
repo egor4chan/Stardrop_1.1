@@ -61,7 +61,7 @@ function spin() {
     wheel.style.animation = 'spin 10s ease forwards'
 
     setTimeout(() => {
-        spinButton.setAttribute('onclick', 'sell_gift(30)')
+        spinButton.setAttribute('onclick', 'claim()')
         spinButton.removeAttribute('disabled');
         document.getElementById('cursor').style.opacity = 0
         document.getElementById('win').style.scale = 1.05;
