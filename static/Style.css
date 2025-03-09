@@ -1226,3 +1226,137 @@ footer {
 #spin {
     animation: drug 5s infinite ease;
 }
+
+/* crash */
+.cloud {
+    position: relative;
+    top: 80px;
+    width: 90%;
+    left: 5%;
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.clone {
+    position: absolute;
+    top: 80px;
+    width: 90%;
+    left: 5%;
+    height: 300px;
+    background-color: rgb(26, 26, 27);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.buttonsbar {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    top: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonsbar > button {
+    font-family: "Unbounded", monospace;
+    width: calc(48% - 0px);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 3px solid rgb(172, 107, 10);
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 16px;
+    transition: 0.3s;
+    
+}
+
+.buttonsbar > input {
+    width: 48%;
+    font-family: "Unbounded", monospace;
+    width: calc(48% - 75px);
+    height: 100%;
+
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 25px;
+    padding-right: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(15, 15, 17);
+    border-bottom: 3px solid rgb(11, 11, 12);
+    color: white;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+.buttonsbar > input:focus-within {
+    border-bottom: 3px solid rgb(250, 203, 47);
+}
+
+#st {
+    position: absolute;
+    top: 12px;
+    right: 56%;
+}
+
+#x {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 70px;
+}
+
+.history {
+    position: relative;
+    width: 90%;
+    height: 100px;
+
+    left: 5%;
+    top: 120px;
+
+}
+
+.history > div {
+    width: (100% - 50px);
+
+    height: 40px;
+    padding: 25px 0px;
+    background-color: rgb(15, 15, 17);
+    border-radius: 12px;
+    color: white
+}
+
+.history > div > span#profit {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
