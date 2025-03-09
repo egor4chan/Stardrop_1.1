@@ -240,6 +240,22 @@ button.goto {
     top: 20px;
 }
 
+.plus {
+    position: absolute;
+    width: 100px auto;
+    padding: 0px 12px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(25, 25, 26);
+    border-radius: 10px;
+    right: 200px;
+    top: 20px;
+}
+
 button.spin {
     transition: 0.4s;
     height: 60px;
@@ -457,6 +473,8 @@ span#pricecase {
     justify-content: center;
     display: flex;
     align-items: center;
+
+    box-shadow: 0px 0px 0px rgb(248, 247, 247);
 }
 
 #banner {
@@ -585,7 +603,11 @@ button.sellall {
     border-bottom: 3px solid rgb(172, 107, 10);
     color: black;
     cursor: pointer;
+
+    animation: drug 5s infinite ease;
 }
+
+
 
 .screen {
     transition: 0.5s;
@@ -601,6 +623,22 @@ button.sellall {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+#withdraw-window {
+    transition: 1s;
+    position: fixed;
+    width: 90%;
+    height: 230px;
+    border-radius: 15px;
+    left: 5%;
+    top: calc(50% - 220px);
+    z-index: 2000;
+    background-color: rgb(21, 21, 24);
+    border-bottom: 3px solid rgb(10, 10, 10);
+    opacity: 0;
+    top: -60%;
+    
 }
 
 #deposit-window {
@@ -620,10 +658,28 @@ button.sellall {
     
 }
 
+#withdraw-window > h2 {
+    width: 90%;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: white;
+    font-weight: 600;
+}
+
 #deposit-window > h2 {
     width: 90%;
     position: absolute;
     top: 20px;
+    left: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+#withdraw-window > h2.second {
+    width: 90%;
+    position: absolute;
+    top: 160px;
     left: 30px;
     color: white;
     font-weight: 600;
@@ -638,10 +694,30 @@ button.sellall {
     font-weight: 600;
 }
 
+#withdraw-window > h5 {
+    width: 90%;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    color: rgb(179, 179, 179);
+    font-weight: 300;
+    font-size: 11px;
+}
+
 #deposit-window > h5 {
     width: 90%;
     position: absolute;
     top: 50px;
+    left: 30px;
+    color: rgb(179, 179, 179);
+    font-weight: 300;
+    font-size: 11px;
+}
+
+#withdraw-window > h5.second {
+    width: 90%;
+    position: absolute;
+    top: 190px;
     left: 30px;
     color: rgb(179, 179, 179);
     font-weight: 300;
@@ -656,6 +732,27 @@ button.sellall {
     color: rgb(179, 179, 179);
     font-weight: 300;
     font-size: 11px;
+}
+
+#withdraw-window > button {
+    transition: 0.4s;
+    height: 60px;
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 3px solid rgb(172, 107, 10);
+    font-family: "Unbounded", monospace;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -680,6 +777,22 @@ button.sellall {
     align-items: center;
 }
 
+#withdraw-window > input {
+    font-family: "Unbounded", monospace;
+    width: calc(85% - 80px);
+    left: 7.5%;
+    height: 50px;
+    position: absolute;
+    top: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(15, 15, 17);
+    color: white;
+}
+
 #deposit-window > input {
     font-family: "Unbounded", monospace;
     width: calc(85% - 80px);
@@ -687,6 +800,22 @@ button.sellall {
     height: 50px;
     position: absolute;
     top: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(15, 15, 17);
+    color: white;
+}
+
+#withdraw-window > input.second {
+    font-family: "Unbounded", monospace;
+    width: calc(85% - 80px);
+    left: 7.5%;
+    height: 50px;
+    position: absolute;
+    top: 234px;
     border-radius: 15px;
     cursor: pointer;
     padding: 0px 40px;
@@ -710,6 +839,12 @@ button.sellall {
     border: none;
     background-color: rgb(15, 15, 17);
     color: white;
+}
+
+#withdraw-window > #star {
+    position: absolute;
+    right: calc(5% + 30px);
+    top: 86px
 }
 
 #deposit-window > #star {
@@ -1070,4 +1205,24 @@ footer {
 
     cursor: pointer;
     z-index: 100;
+}
+
+@keyframes drug {
+    from {
+        box-shadow: 0px 0px 20px black;
+    }
+    50% {
+        box-shadow: 0px 0px 30px rgb(212, 157, 74);
+    }
+    to {
+        box-shadow: 0px 0px 20px black;
+    }
+}
+
+#goToCase {
+    animation: drug 5s infinite ease;
+}
+
+#spin {
+    animation: drug 5s infinite ease;
 }
