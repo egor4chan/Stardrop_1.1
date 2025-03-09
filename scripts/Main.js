@@ -17,6 +17,9 @@ function spawn() {
 
     document.body.appendChild(element);
 
+    setTimeout(() => {
+        element.remove()
+    }, 5000);
 }
 
 setInterval(()=>{
@@ -79,11 +82,7 @@ function spin() {
         document.getElementById('win').style.border = '1px solid rgb(255, 196, 0)'
 
         var claimButton = document.createElement('button')
-        claimButton.setAttribute('id', 'claimButton')
-        claimButton.setAttribute('onclick', 'claim()')
-        claimButton.innerHTML = 'Claim';
-        claimButton.setAttribute('class', 'spin')
-        document.getElementById('button-cont').appendChild(claimButton)
+        
 
         document.getElementById('spin').style.backgroundColor = 'rgb(255, 196, 0)'
 

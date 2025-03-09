@@ -7,9 +7,9 @@
 body {
     font-family: "Unbounded", monospace;
     height: 100vh;
-    background-image: linear-gradient(45deg, rgb(15, 15, 17), rgb(12, 12, 14));
+    background: rgb(12, 12, 14);
     overflow-x: hidden;
-
+    width: 100%;
 }
 
 .box {
@@ -139,11 +139,11 @@ button.goto {
 
 .blur {
     font-size: 120px;
-    position: absolute;
+    position: fixed;
     font-weight: 900;
     color: rgb(255, 196, 0);
     
-    animation: rotate 8s ease-in-out forwards;
+    animation: rotate 5s ease-in-out forwards;
     rotate: 0deg;
     top: -200px;
     z-index: -1;
@@ -165,7 +165,7 @@ button.goto {
     }
     to {
         rotate: 360deg;
-        top: 210%;
+        top: 110%;
         opacity: 0;
     }
 }
@@ -402,6 +402,19 @@ footer {
     border-radius: 12px;
 }
 
+.starsfree {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 140px;
+    background-color: rgb(255, 196, 0);
+    color: black;
+    top: 80px;
+    border-radius: 12px;
+}
+
+
+
 .casePepe > span#name {
     position: absolute;
     top: 20px;
@@ -410,6 +423,7 @@ footer {
     font-weight: 800;
     color: white;
 }
+
 
 span#pricecase {
     position: absolute;
@@ -831,4 +845,229 @@ body {
     to{ 
         scale: 1;
     }
+}
+
+.promo {
+    width: calc(90% - 50px);
+    padding: 10px 25px;
+    left: 5%;
+    height: 160px;
+    position: relative;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 3px solid rgb(172, 107, 10);
+    top: 140px;
+    border-radius: 10px;
+}
+
+.promo > h1 {
+    font-size: 28px;
+}
+
+.promo > div {
+    width: 100%;
+
+    position: relative;
+    height: 50px;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.promo > div > input {
+    font-family: "Unbounded", monospace;
+    width: calc(48% - 80px);
+    height: 100%;
+    position: absolute;
+
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(15, 15, 17);
+    color: white;
+}
+
+.promo > div > button {
+    font-family: "Unbounded", monospace;
+    width: calc(48% - 0px);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(192, 190, 190);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#labelbig {
+    position: relative;
+    top: 60px;
+    left: 5%;
+    padding: 5px 10px;
+    background-color: rgb(20, 20, 22);
+    color: rgb(177, 177, 177);
+    width: 61px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-bottom: 2px solid rgb(10, 10, 10);
+}
+
+#labelbig2 {
+    position: relative;
+    top: 100px;
+    left: 5%;
+    padding: 5px 10px;
+    background-color: rgb(20, 20, 22);
+    color: rgb(177, 177, 177);
+    width: 92px;
+    border-radius: 10px;
+    font-size: 14px;
+    border-bottom: 2px solid rgb(10, 10, 10);
+}
+
+.auctions {
+    position: relative;
+    left: 5%;
+    top: 120px;
+    width: 90%;
+    height: 260px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 120px;
+}
+
+.auctions > div {
+    width: calc(50% - 5px);
+    border-radius: 12px;
+    height: 100%;
+    background-color: rgb(20, 20, 22);
+    border-bottom: 3px solid rgb(10, 10, 10);
+    cursor: pointer;
+}
+
+.auctions > div > img {
+    position: relative;
+    width: 70%;
+    top: 20px;
+    left: 15%;
+}
+
+.auctions > div > button {
+    position: absolute;
+    width: 40%;
+    margin-left: 5%;
+    bottom: 20px;
+    height: 40px;
+    font-family: "Unbounded", monospace;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 3px solid rgb(172, 107, 10);
+
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.auctions > div > span#f {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(32, 33, 34);
+    width: 30%;
+    left: 7%;
+    bottom: 70px;
+    border-radius: 10px;
+}
+
+.auctions > div > span#s {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(32, 33, 34);
+    width: 30%;
+    right: 7%;
+    bottom: 70px;
+    border-radius: 10px;
+}
+
+/* AUCTIONS */
+.auc-window {
+    width: 90%;
+    left: 5%;
+    height: 300px;
+    top: 70px;
+    position: relative;
+    text-align: center;
+    border-radius: 12px;
+
+}
+
+.auc-window-blur {
+    width: 90%;
+    left: 5%;
+    background-color: rgb(26, 26, 27);
+    opacity: 0.8;
+    height: 300px;
+    top: 70px;
+    position: absolute;
+    text-align: center;
+    border-radius: 12px;
+
+}
+
+.auc-window > img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.bet {
+    position: fixed;
+    width: 90%;
+    left: 5%;
+    bottom: 100px;
+    height: 50px;
+    font-family: "Unbounded", monospace;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    border-radius: 10px;
+    background-color: rgb(255, 196, 0);
+    border-bottom: 3px solid rgb(172, 107, 10);
+
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+    cursor: pointer;
+    z-index: 100;
 }

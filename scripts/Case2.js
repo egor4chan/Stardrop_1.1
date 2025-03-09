@@ -76,13 +76,6 @@ function spin() {
         document.getElementById('win').style.scale = 1.05;
         document.getElementById('win').style.border = '1px solid rgb(255, 196, 0)'
 
-        var claimButton = document.createElement('button')
-        claimButton.setAttribute('id', 'claimButton')
-        claimButton.setAttribute('onclick', 'claim(100)')
-        claimButton.innerHTML = 'Claim';
-        claimButton.setAttribute('class', 'spin')
-        document.getElementById('button-cont').appendChild(claimButton)
-
         document.getElementById('spin').style.backgroundColor = 'rgb(255, 196, 0)'
 
         var priceForSell = '60 000'
