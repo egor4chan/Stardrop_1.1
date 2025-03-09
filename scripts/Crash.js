@@ -29,7 +29,7 @@ function game_over(prize) {
     max_coef = 1 // итоговый кф
 
     if (prize != 0) {
-        alert(prize)
+        
         send_notify('You won ' + prize + ' stars in Crash!')
         document.getElementById('profitlastgame').innerHTML = `+${prize}`
         document.getElementById('profitlastgame').style.color = 'rgb(23, 180, 23)';
